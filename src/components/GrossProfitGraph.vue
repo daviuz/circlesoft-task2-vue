@@ -50,7 +50,7 @@ export default {
       this.year = year;
       let self = this;
       axios
-        .get("http://localhost:3000/api/v1/grossprofit/" + year)
+        .get("http://circlesofttest.markhermano.com/api/v1/grossprofit/" + year)
         .then(res => {
           this.loadingData = false;
           self.dbData = res.data.data;

@@ -20,9 +20,6 @@ export default {
       defaultValue: "2018"
     };
   },
-  created() {
-    console.log(this.subtitle);
-  },
   methods: {
     onYearPick: function() {
       this.$emit("onYearPick", this.defaultValue.getFullYear());
