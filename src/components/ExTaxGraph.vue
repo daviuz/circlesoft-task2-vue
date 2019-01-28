@@ -106,8 +106,9 @@ export default {
       const finalExTax = sumOfExTax.map(total => Math.round(total * 100) / 100);
       this.currentYearExTax =
         "<span style='font-weight:bold'>" +
-        finalExTax.reduce((x, y) => x + y, 0) +
+        Math.round(finalExTax.reduce((x, y) => x + y, 0) * 100) / 100 +
         "</span> Total Ex Tax Sales";
+      console.log(this.currentYearExTax);
       return finalExTax;
     },
 
