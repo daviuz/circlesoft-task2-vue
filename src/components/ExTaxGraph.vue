@@ -108,7 +108,6 @@ export default {
         "<span style='font-weight:bold'>" +
         Math.round(finalExTax.reduce((x, y) => x + y, 0) * 100) / 100 +
         "</span> Total Ex Tax Sales";
-      console.log(this.currentYearExTax);
       return finalExTax;
     },
 
